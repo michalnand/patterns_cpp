@@ -9,10 +9,16 @@ class RuleOfThree
     RuleOfThree();
 
     // Copy constructor
+    RuleOfThree(RuleOfThree& other);
+
+    // Copy constructor
     RuleOfThree(const RuleOfThree& other);
 
     // Destructor
     virtual ~RuleOfThree();
+
+    // Copy assignment operator
+    RuleOfThree& operator= (RuleOfThree& other);
 
     // Copy assignment operator
     RuleOfThree& operator= (const RuleOfThree& other);
