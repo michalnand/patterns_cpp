@@ -22,6 +22,10 @@ class RuleOfThree
 
     // Copy assignment operator
     RuleOfThree& operator= (const RuleOfThree& other);
+
+  protected:
+    void copy(RuleOfThree& other);
+    void copy(const RuleOfThree& other);
 };
 
 

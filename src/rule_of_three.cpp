@@ -8,14 +8,12 @@ RuleOfThree::RuleOfThree()
 
 RuleOfThree::RuleOfThree(RuleOfThree& other)
 {
-  (void)other;
-  //TODO copy other to this
+  copy(other);
 }
 
 RuleOfThree::RuleOfThree(const RuleOfThree& other)
 {
-  (void)other;
-  //TODO copy other to this
+  copy(other);
 }
 
 RuleOfThree::~RuleOfThree()
@@ -25,16 +23,26 @@ RuleOfThree::~RuleOfThree()
 
 RuleOfThree& RuleOfThree::operator= (RuleOfThree& other)
 {
-  (void)other;
-  //TODO copy other to this
+  copy(other);
 
   return *this;
 }
 
 RuleOfThree& RuleOfThree::operator= (const RuleOfThree& other)
 {
-  (void)other;
-  //TODO copy other to this
+  copy(other);
 
   return *this;
+}
+
+void RuleOfThree::copy(RuleOfThree& other)
+{
+  (void)other;
+  //TODO copy other to this
+}
+
+void RuleOfThree::copy(const RuleOfThree& other)
+{
+  (void)other;
+  //TODO copy other to this
 }
